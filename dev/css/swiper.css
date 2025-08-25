@@ -4,9 +4,10 @@
   height: 100%;
 }
 
-.hero__swiper{
+.hero__swiper {
   height: 100%;
 }
+
 
 .cups__swiper {
   display: none !important;
@@ -62,7 +63,7 @@
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: #B48B4B;
+  background-color: #b48b4b;
   opacity: 0.8;
   border-radius: 50%;
   transition: 0.3s opacity;
@@ -109,7 +110,7 @@
 }
 
 .swiper__pagination span.swiper-pagination-bullet-active {
-  background-color: #B48B4B;
+  background-color: #b48b4b;
 }
 
 @media (max-width: 767.98px) {

@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       320: { slidesPerView: 1, spaceBetween: 15 },
       767: { slidesPerView: 2, spaceBetween: 15 },
-    
+
     },
   });
 
