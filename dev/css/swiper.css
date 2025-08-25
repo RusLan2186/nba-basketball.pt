@@ -1,0 +1,140 @@
+.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.hero__swiper{
+  height: 100%;
+}
+
+.cups__swiper {
+  display: none !important;
+}
+
+.custom__swiper,
+.clubs__swiper,
+.cups__swiper {
+  padding-top: 60px;
+}
+
+.news__swiper {
+  min-width: 0;
+  width: 100%;
+}
+
+.swiper__body {
+  margin-bottom: 30px;
+}
+
+.swiper-slide.custom__swiper_slide {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 0 1px;
+}
+
+.news__swiper_slide {
+  height: auto;
+  min-height: 0;
+}
+
+.swiper__buttons {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  width: 120px;
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+
+.swiper-news__buttons {
+  top: 50%;
+}
+
+.swiper-button-next.custom__buttom_next,
+.swiper-button-prev.custom__buttom_prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(255, 127, 0);
+  opacity: 0.8;
+  border-radius: 50%;
+  transition: 0.3s opacity;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.25rem !important;
+  color: #ffffff;
+  font-weight: 700;
+  transition: 0.3s color;
+  position: relative;
+}
+
+.swiper-button-next::after {
+  right: -0.0625rem;
+}
+
+.swiper-button-prev::after {
+  right: 0.0625rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+
+/* .swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  color: #000000;
+} */
+
+.swiper__pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper__pagination span.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  width: 0.75rem; /* 12px */
+  height: 0.75rem; /* 12px */
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.3s;
+}
+
+.swiper__pagination span.swiper-pagination-bullet-active {
+  background-color: rgb(255, 127, 0);
+}
+
+@media (max-width: 767.98px) {
+  .cups__swiper {
+    display: block !important;
+  }
+  .hero-pagination {
+    transform: translateY(-60px);
+  }
+}
+
+@media (max-width: 599.98px) {
+  .custom__swiper,
+  .clubs__swiper,
+  .cups__swiper {
+    padding-top: 5px;
+  }
+
+  .swiper__buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 449.98px) {
+  .hero-pagination {
+    transform: translateY(-40px);
+  }
+}
