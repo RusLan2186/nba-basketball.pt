@@ -1,0 +1,29 @@
+.pagination__section {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 30px;
+}
+
+.pag__item {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 6px 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s background-color;
+  line-height: 1.2;
+}
+.pag__item:hover {
+  background: #b48b4b;
+  color: rgb(0, 0, 0);
+}
+.pag-item__active {
+  background: #b48b4b;
+}
+
+@media (max-width: 767.98px) {
+  .pagination__section {
+    margin-top: 20px;
+  }
+}

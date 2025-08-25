@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // custom__swiper — может быть несколько
   initSwiper('.custom__swiper', {
     slidesPerView: 4,
-    speed: 800,
+    speed: 700,
     grabCursor: true,
     loop: true,
     spaceBetween: 1,
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     breakpoints: {
       320: { slidesPerView: 1, spaceBetween: 15 },
-      679: { slidesPerView: 2, spaceBetween: 15 },
+      649: { slidesPerView: 2, spaceBetween: 15 },
       900: { slidesPerView: 3, spaceBetween: 15 },
       1250: { slidesPerView: 4, spaceBetween: 15 },
     },
