@@ -90,7 +90,7 @@
 
 @media (max-width: 599.98px) {
   .news__section {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
   .news__rows {
     grid-template-columns: 1fr;

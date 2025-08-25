@@ -3,6 +3,7 @@
 @import 'hero.css';
 @import 'matches.css';
 @import 'news.css';
+@import 'full.css';
 @import 'tables.css';
 @import 'swiper.css';
 
@@ -95,6 +96,12 @@ body {
   border-color: rgb(180, 139, 75);
   text-align: center;
 }
+
+.link__btn-xl{
+  font-size: 20px;
+  padding: 10px 40px;
+}
+
 .link__btn:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(180, 139, 75);
@@ -317,39 +324,11 @@ body {
   flex-basis: 33%;
   text-align: center;
 }
-.full__section {
-  background-image: url('../images/2569e3acd9a7a4671e59a544ecbaa4d1.png');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position-y: center;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  position: relative;
-}
-.full__content {
-  z-index: 10;
-  position: relative;
-}
+
 .big__icon {
   height: 150px;
 }
-.full__title_block {
-  border-style: solid;
-  border-width: 5px;
-  border-color: rgb(180, 139, 75);
-  border-top-width: 0;
-  border-right-width: 0;
-  border-left-width: 0;
-  display: inline-block;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-}
-.full__text_block {
-  font-size: 25px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  margin-bottom: 40px;
-}
+
 .overlay {
   background: linear-gradient(
     to bottom,
@@ -937,4 +916,10 @@ body {
   .title__img--big {
     height: 55px;
   }
+
+  
+.link__btn-xl{
+  font-size: 16px;
+  padding: 8px 30px;
+}
 }
