@@ -1,0 +1,137 @@
+.lives__rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.live__block {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  padding: 15px;
+  border: 3px solid rgb(180, 139, 75);
+}
+
+.live__video_block {
+  height: 100%;
+}
+
+.live__info_block {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.live__date_block {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  column-gap: 10px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(180, 139, 75);
+}
+.live__teams_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.live__team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 19px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  row-gap: 5px;
+  flex-basis: 33%;
+  text-align: center;
+  transition: 0.3s color;
+}
+
+.live__team:hover {
+  color: rgb(180, 139, 75);
+}
+
+.live__team_logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.live__score_icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+@media (max-width: 1199.98px) {
+  .live__team {
+    font-size: 17px;
+  }
+
+  .live__team_logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .live__score_icon {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .lives__rows {
+    grid-template-columns: 1fr;
+  }
+
+  .live__team {
+    font-size: 20px;
+  }
+
+  .live__team_logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .live__score_icon {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .live__team {
+    font-size: 18px;
+  }
+
+  .live__team_logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .live__score_icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 549.98px) {
+  .live__block {
+    padding: 10px;
+    grid-template-columns: 40% 1fr;
+  }
+}
+@media (max-width: 449.98px) {
+  .live__block {
+    grid-template-columns: 1fr;
+  }
+
+  .live__block .live__video_block {
+    display: none;
+  }
+}
