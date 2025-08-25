@@ -2,6 +2,7 @@
 @import 'header.css';
 @import 'hero.css';
 @import 'matches.css';
+@import 'news.css';
 @import 'tables.css';
 @import 'swiper.css';
 
@@ -156,18 +157,11 @@ body {
   position: sticky;
   top: 65px;
 }
-.news__section {
-  padding-bottom: 50px;
-}
+
 .bg-grey {
   background-color: rgb(218, 218, 218);
 }
-.news__rows {
-  display: grid;
-  grid-template-columns: 25% 25% 1fr;
-  column-gap: 15px;
-  row-gap: 15px;
-}
+
 .media__item {
   display: flex;
   flex-direction: column;
