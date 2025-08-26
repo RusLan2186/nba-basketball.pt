@@ -1,0 +1,20 @@
+.post__img_block{
+  padding-bottom: 50%;
+  margin-bottom: 15px;
+}
+
+.post__text_block {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.post__text_block > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 499.98px) {
+  .post__img_block, .video-post__img_block {
+    padding-bottom: 70%;
+  }
+}

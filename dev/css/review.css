@@ -1,0 +1,322 @@
+.review-head__section {
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+
+.review-head__content {
+  position: relative;
+  z-index: 10;
+}
+
+.review-head__block {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.review-head__date {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.review-head__teams_block {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.review-head__team_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  font-size: 26px;
+  flex-basis: 33%;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.review-head__logo {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+.review-head__score {
+  font-size: 55px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.review-head__video_block {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review-head__video_img-block {
+  padding-bottom: 35%;
+}
+
+.review-head__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+.content-review__rows {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  gap: 40px;
+}
+
+/* game stats */
+.game-stat {
+  background: transparent;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.game-stat__title {
+  font-size: 22px;
+  margin-bottom: 0;
+  color: rgb(0, 0, 0);
+}
+
+.game-stat__item:last-child {
+  border-bottom-width: 0;
+  padding-bottom: 0;
+}
+
+.item-game-stat {
+  padding: 0.75rem;
+}
+.item-game-stat__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.item-game-stat__value {
+  width: 50px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #B48B4B ;
+}
+
+.item-game-stat__value:first-child {
+  text-align: left;
+}
+
+.item-game-stat__value:last-child {
+  text-align: right;
+}
+
+.item-game-stat__label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  line-height: 100%;
+}
+
+.item-game-stat__row {
+  display: grid;
+  -webkit-column-gap: 5px;
+  -moz-column-gap: 5px;
+  column-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+.item-game-stat__line {
+  height: 5px;
+  background: #B48B4B ;
+  border-radius: 3px;
+}
+.item-game-stat__line:last-child {
+  background-color: #000000;
+}
+/*  */
+
+.review-aside__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+.game-info__wrap {
+  width: 100%;
+}
+.game-info__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  column-gap: 50px;
+  align-items: flex-start;
+  border-style: solid;
+  border-color: #B48B4B ;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom-width: 1px;
+}
+.game-info__item:first-child {
+  border-top-width: 0;
+}
+.game-info__item:last-child {
+  border-bottom-width: 0;
+  padding-bottom: 0;
+}
+
+.grid-cols-6 {
+  display: grid;
+  grid-template-columns: 20% repeat(5, 1fr);
+  padding-left: 10px;
+}
+
+.linescores__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.review-post__rows {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  column-gap: 40px;
+  row-gap: 30px;
+}
+
+
+@media (max-width: 991.98px) {
+  .review-head__team_block {
+    font-size: 24px;
+  }
+
+  .review-head__logo {
+    height: 90px;
+    width: 90px;
+  }
+
+  .review-head__score {
+    font-size: 50px;
+  }
+
+  .review-head__video_block {
+    width: 60%;
+  }
+
+  .review-head__video__img-block {
+    padding-bottom: 40%;
+  }
+}
+
+@media (max-width: 949.98px) {
+  .content-review__rows,
+  .review-post__rows {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .review-head__block {
+    width: 100%;
+  }
+
+  .review-head__teams_block {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  .review-head__team_block {
+    font-size: 21px;
+  }
+
+  .review-head__logo {
+    height: 70px;
+    width: 70px;
+  }
+
+  .review-head__score {
+    font-size: 38px;
+  }
+
+  .review-head__video_block {
+    width: 70%;
+  }
+}
+
+@media (max-width: 499.98px) {
+  .review-head__date {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .review-head__block {
+    margin-bottom: 30px;
+  }
+
+  .review-head__team_block {
+    font-size: 21px;
+  }
+
+  .review-head__logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .review-head__score {
+    font-size: 28px;
+  }
+
+  .review-head__video_block {
+    width: 90%;
+  }
+
+  .review-head__video__img-block {
+    padding-bottom: 45%;
+  }
+
+  .item-game-stat__value {
+    font-size: 20px;
+  }
+
+  .item-game-stat__label {
+    font-size: 16px;
+  }
+}
