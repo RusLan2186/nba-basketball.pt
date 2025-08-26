@@ -441,10 +441,7 @@ body {
   height: 40px;
 }
 
-.grid-pts-table {
-  display: grid;
-  grid-template-columns: 1fr 20% repeat(12, 1fr);
-}
+
 .grid-cols-69-1fr {
   display: grid;
   column-gap: 30px;

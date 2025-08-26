@@ -1,3 +1,8 @@
+.grid-pts-table {
+  display: grid;
+  grid-template-columns: 1fr 20% repeat(12, 1fr);
+}
+
 .grid-pts-table-sm {
   display: grid;
   grid-template-columns: 10% 40% repeat(5, 1fr);
@@ -43,21 +48,118 @@
   font-weight: 700;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
+  text-align: left;
+  line-height: 1.2;
 }
-.team-logo-30, .table__team_logo {
+.team-logo-30,
+.table__team_logo {
   height: 30px;
   width: 30px;
   object-fit: contain;
 }
 
-.aside-table{
+.aside-table {
   margin-bottom: 30px;
 }
 
-@media (max-width: 767.98px){
-  .aside-table{
-  margin-bottom: 20px;
-}
+@media (max-width: 1099.98px) {
+  .pts__table {
+    overflow: scroll;
+  }
+
+  .pts__table::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .grid-pts-table {
+    width: 1150px;
+    grid-template-columns: 70px 250px repeat(12, 1fr);
+  }
+
+  .table__head.grid-pts-table span:nth-of-type(-n + 2) {
+    position: sticky;
+    background-color: #ffffff;
+    z-index: 10;
+  }
+
+  .table__head.grid-pts-table span:nth-of-type(1) {
+    left: 0;
+  }
+  .table__head.grid-pts-table span:nth-of-type(2) {
+    left: 70px;
+  }
+
+  .table__body.grid-pts-table > :nth-child(-n + 2) {
+    position: sticky;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+  }
+
+  .table__body.grid-pts-table > :nth-child(1) {
+    left: 0;
+  }
+  .table__body.grid-pts-table > :nth-child(2) {
+    left: 70px;
+  }
 }
 
-@media (max-width: 449.98px){}
+@media (max-width: 767.98px) {
+  .aside-table {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 649.98px) {
+  .grid-pts-table {
+    width: 950px;
+    grid-template-columns: 50px 200px repeat(12, 1fr);
+  }
+
+  .table__head.grid-pts-table {
+    font-size: 15px;
+  }
+
+  .table__head.grid-pts-table span:nth-of-type(2) {
+    left: 50px;
+  }
+
+  .table__body.grid-pts-table > :nth-child(2) {
+    left: 50px;
+  }
+
+  .pts__table .table__team_block {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 449.98px) {
+  .grid-pts-table {
+    width: 750px;
+    grid-template-columns: 30px 170px repeat(12, 1fr);
+  }
+
+  .table__head.grid-pts-table {
+    font-size: 11px;
+  }
+
+  .table__body {
+    font-size: 14px;
+  }
+
+  .table__head.grid-pts-table span:nth-of-type(2) {
+    left: 30px;
+  }
+
+  .table__body.grid-pts-table > :nth-child(2) {
+    left: 30px;
+  }
+
+  .pts__table .table__team_block {
+    column-gap: 5px;
+    font-size: 14px;
+  }
+
+  .pts__table .table__team_logo {
+    height: 25px;
+  }
+}
