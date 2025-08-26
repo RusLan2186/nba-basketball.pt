@@ -12,6 +12,7 @@
 @import 'footer.css';
 @import 'review.css';
 @import 'post.css';
+@import 'team.css';
 @import 'pagination.css';
 @import 'swiper.css';
 
@@ -219,7 +220,7 @@ body {
   row-gap: 10px;
   align-items: flex-start;
 }
-.label {
+.label, .video-slider__label {
   background: #b48b4b;
   font-size: 17px;
   font-weight: 600;
@@ -531,13 +532,7 @@ body {
 .fs-13 {
   font-size: 13px;
 }
-.team__head_section {
-  background-image: url('../images/354d26081b235c118dbb19a2daab5109.webp');
-  background-size: cover;
-  height: 32vh;
-  background-repeat: no-repeat;
-  background-position-y: -50px;
-}
+
 .team__head_content {
   align-items: center;
   display: flex;
@@ -551,58 +546,7 @@ body {
 .team-logo-130 {
   height: 130px;
 }
-.about__content {
-  column-gap: 20px;
-}
-.management__section {
-}
-.management__rows {
-  column-gap: 20px;
-  row-gap: 20px;
-}
-.management__item {
-  display: flex;
-  flex-direction: column;
-  text-transform: capitalize;
-}
-.players__rows {
-  row-gap: 20px;
-  column-gap: 20px;
-}
-.player__card {
-  box-shadow: 0px 0px 6px rgb(180, 139, 75);
-}
-.player__img_block {
-  padding-bottom: 90%;
-  background: #dadada;
-  transition: 0.3s all ease;
-}
-.player__img_block:hover {
-  background: #b48b4b;
-  transition: 0.3s all ease;
-}
-.player__footer {
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  align-items: flex-start;
-  display: flex;
-  column-gap: 50px;
-}
-.player__info {
-  text-transform: capitalize;
-  font-weight: 500;
-}
-.cups__rows {
-  column-gap: 20px;
-}
-.cup__item {
-  row-gap: 8px;
-}
-.cup__img {
-  height: 200px;
-}
+
 .player-head__section {
   background: #b48b4b;
   padding-top: 20px;
