@@ -15,7 +15,7 @@
 
 .fc .fc-button {
   background-color: #ffffff;
-  color: rgb(255, 127, 0);
+  color:  #B48B4B;
   border: none;
   border-radius: 0.25rem; /* 4px */
   padding: 0.375rem 0.75rem; /* 6px 12px */
@@ -23,12 +23,12 @@
   transition: 0.3s background-color;
 }
 .fc .fc-button:hover {
-  background-color: rgb(255, 127, 0);
+  background-color:  #B48B4B;
   color: #fff;
 }
 .fc .fc-button-active {
   background-color: #ffffff;
-  color: rgb(255, 127, 0);
+  color:  #B48B4B;
 }
 .fc .fc-button:disabled {
   background-color: #eee;
@@ -41,12 +41,12 @@
 }
 
 .fc-col-header {
-  border: 1px solid rgb(255, 127, 0);
+  border: 1px solid  #B48B4B;
 }
 
 /* день недели  */
 .fc-col-header-cell {
-  background-color: rgb(255, 127, 0);
+  background-color:  #B48B4B;
 }
 
 /* день недели текст */
@@ -58,17 +58,17 @@
 .fc-view-harness.fc-view-harness-active {
   height: 43.75rem !important; /* 700px */
   overflow: hidden;
-  border: 1px solid rgb(255, 127, 0);
+  border: 1px solid  #B48B4B;
 }
 
 /* день число */
 .fc .fc-daygrid-day-frame {
   padding: 0.25rem;
-  color: rgb(255, 127, 0);
+  color:  #B48B4B;
 }
 
 .fc-theme-standard td {
-  border: 1px solid rgb(255, 127, 0);
+  border: 1px solid  #B48B4B;
 }
 
 .fc .fc-daygrid-event {
@@ -79,7 +79,7 @@
 }
 
 .fc .fc-daygrid-day.fc-day-today {
-  background-color: rgb(255, 127, 0);
+  background-color:  #B48B4B;
 }
 
 /* color today number */
@@ -107,7 +107,7 @@
   text-align: center;
   padding: 10px 20px; /* 10px */
   background-color: #000000;
-  border: 1px solid rgb(255, 127, 0);
+  border: 1px solid  #B48B4B;
   border-radius: 2px;
 }
 
@@ -128,7 +128,7 @@
   transition: 0.3s all ease 0s;
 }
 .team:hover {
-  color: rgb(255, 127, 0);
+  color:  #B48B4B;
 }
 
 .team-logo {
@@ -145,7 +145,7 @@
   font-size: 20px;
   font-weight: bold;
   min-width: 1.875rem;
-  color: rgb(255, 127, 0);
+  color:  #B48B4B;
 }
 .event-bottom {
   margin-top: 0.25rem;
@@ -154,7 +154,7 @@
 .match-center-btn {
   display: inline-block;
   padding: 0.25rem 0.5rem;
-  border: 2px solid rgb(255, 127, 0);
+  border: 2px solid  #B48B4B;
   border-radius: 20px;
   font-size: 16px;
   color: #ffffff;
@@ -166,7 +166,7 @@
   transition: 0.3s all;
 }
 .match-center-btn:hover {
-  background-color: rgb(255, 127, 0);
+  background-color:  #B48B4B;
   border-color: #fff; /* белая рамка */
   box-shadow: 0 0 10px rgba(255, 127, 0, 0.7);
   transform: scale(1.05);
@@ -198,7 +198,7 @@
 
 @media (max-width: 991.98px) {
   .fc .fc-daygrid-day-top {
-    background-color: rgb(255, 127, 0);
+    background-color:  #B48B4B;
     padding: 0.625rem; /* 10px */
   }
 
@@ -250,7 +250,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     min-width: 1.875rem;
-    color: rgb(255, 127, 0);
+    color:  #B48B4B;
   }
   .match-center-btn {
     padding: 0.5rem 0.9375rem; /* 8px 15px */

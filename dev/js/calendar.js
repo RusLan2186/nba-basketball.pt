@@ -6,47 +6,26 @@ const calendar = new FullCalendar.Calendar(calendarEl, {
     {
       start: '2025-08-04',
       extendedProps: {
-        homeLogo: '/images/4ead8b11dd6fecdfb3ae789f2a4ab8af.png',
-        awayLogo: '/images/5f9e9d3862d184bc6a36f384c1dd3ee9.png',
+        homeLogo: '/images/19ae092e1c0ff0070a25afa8ea01f910.png',
+        awayLogo: '/images/32b68227876100e290a86ee73c2372e7.png',
         homeShort: 'tor',
-        awayShort: 'bos',
-        time: '2 : 0',
+        awayShort: 'cli',
+        time: '20:00',
         matchUrl: '#'
       }
     },
     {
       start: '2025-08-04',
       extendedProps: {
-        homeLogo: '/images/4ead8b11dd6fecdfb3ae789f2a4ab8af.png',
-        awayLogo: '/images/5f9e9d3862d184bc6a36f384c1dd3ee9.png',
-        homeShort: 'tor',
-        awayShort: 'bos',
-        time: '2 : 0',
+        homeLogo: '/images/31a004456f873765065a43f9614d1fc7.png',
+        awayLogo: '/images/ac34caef9fb083ff315c3d59445aea1b.png',
+        homeShort: 'bos',
+        awayShort: 'hou',
+        time: '18:00',
         matchUrl: '#'
       }
     },
-     {
-      start: '2025-08-10',
-      extendedProps: {
-        homeLogo: '/images/4ead8b11dd6fecdfb3ae789f2a4ab8af.png',
-        awayLogo: '/images/5f9e9d3862d184bc6a36f384c1dd3ee9.png',
-        homeShort: 'tor',
-        awayShort: 'bos',
-        time: '2 : 0',
-        matchUrl: '#'
-      }
-    },
-    {
-      start: '2025-08-16',
-      extendedProps: {
-        homeLogo: '/images/4ead8b11dd6fecdfb3ae789f2a4ab8af.png',
-        awayLogo: '/images/5f9e9d3862d184bc6a36f384c1dd3ee9.png',
-        homeShort: 'tor',
-        awayShort: 'bos',
-        time: '2 : 0',
-        matchUrl: '#'
-      }
-    },
+   
   ],
   eventContent: function (arg) {
     const { homeLogo, awayLogo, homeShort, awayShort, time, matchUrl } = arg.event.extendedProps;
