@@ -91,8 +91,10 @@
   margin-bottom: 20px;
 }
 .video__items_rows {
-  column-gap: 15px;
-  row-gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+ 
 }
 
 @media (max-width: 991.98px) {
