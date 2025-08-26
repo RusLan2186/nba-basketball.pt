@@ -36,6 +36,7 @@
   grid-template-columns: 60px 1fr;
   align-items: center;
   column-gap: 10px;
+  width: 100%;
 }
 
 .team__info {
