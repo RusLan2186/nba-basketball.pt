@@ -40,7 +40,7 @@
   height: clamp(30px, 6vw, 70px);
 }
 
-.splide {
+.video-splide {
   gap: 15px;
   width: 80%;
   margin: -120px auto 0 auto;
@@ -59,6 +59,7 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
+    border: 1px solid #ffffff;
 }
 
 .video__slider_item {
@@ -104,11 +105,6 @@
   }
 }
 
-@media (max-width: 767.98px) {
-  .splide {
-    width: 100%;
-  }
-}
 
 @media (max-width: 649.98px) {
   .video__img_block--big {
@@ -121,13 +117,9 @@
 }
 
 @media (max-width: 499.98px) {
-  .splide {
+  .video-splide {
     margin-top: -60px;
     padding: 5px;
-  }
-
-  .video__item {
-    border: 1px solid #ffffff;
   }
 
   .video__slider_item {

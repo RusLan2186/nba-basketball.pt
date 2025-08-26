@@ -1,288 +1,984 @@
 <!DOCTYPE html>
 <html lang="pt">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>player</title>
-    <meta name="description" content="This is a new page.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="This is a player page." />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="path-to-the-file/splide.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
-    <div class="body">
-      <div class="header mb-reset">
+    <div class="wrapper">
+      <header class="header mb-reset">
         <div class="container">
-          <div class="header__content flx-btwn"><a class="link-reset header__logo_link" href="https://nba-basketball.pt/"><img class="header__logo" src="/images/e5ee95bf957f3ac2d6a748b4dd8a67db.png" /></a>
-            <div class="header__menu">
-              <ul class="reset header__menu_list">
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/post">post</a></li>
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/video-post">video post</a></li>
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/news">news</a></li>
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/review">review</a></li>
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/stats">stats</a></li>
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/calendar">calendar</a></li>
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/results">results</a></li>
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/video">video</a></li>
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/live">live</a></li>
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/team">team</a></li>
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/player">player</a></li>
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/teams">teams</a></li>
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/contact">contact</a></li>
-                <li><a class="link-reset header__menu_link" href="https://nba-basketball.pt/history">history</a></li>
+          <div class="header__content">
+            <a class="header__logo_link" href="/">
+              <img
+                class="header__logo_img"
+                alt="logo"
+                src="/images/e5ee95bf957f3ac2d6a748b4dd8a67db.png"
+              />
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav_list">
+                <li>
+                  <a class="header__nav_link" href="/pages/post.html">post</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/video-post.html"
+                    >video post</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/news.html">news</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/stats.html">stats</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/review.html"
+                    >review</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/calendar.html"
+                    >calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/results.html"
+                    >results</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/history.html"
+                    >history</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/video.html">video</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/live.html">live</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/team.html">team</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/teams.html">teams</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/player.html"
+                    >player</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/contact.html"
+                    >contact</a
+                  >
+                </li>
               </ul>
-            </div>
+            </nav>
+            <button class="header__burger">
+              <span class="header__burger-line"></span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="main">
-        <div class="player-head__section mb-50">
+      </header>
+      <main class="main">
+        <section class="player-head__section section--mb">
           <div class="container">
-            <div class="player-head__rows grid-cols-3">
-              <div class="player__photo_block image-block"><img class="player__img ibg" src="/images/85ecc760ca95085683a211c28e5a82b6.webp" /></div>
-              <div class="player__info_block flx-clmn">
-                <p class="mb-reset">detroit pistons | #24 | Guard</p>
-                <h2 class="title--55">Daniss
-                  Jenkins</h2>
+            <div class="player-head__rows">
+              <div class="player__photo_block image-block">
+                <img
+                  class="player__img ibg"
+                  src="/images/85ecc760ca95085683a211c28e5a82b6.webp"
+                />
               </div>
-              <div class="player-head__logo_block"><img class="player-head__logo" src="/images/f806ef68782fe6549aa6366d332e057e.png" /></div>
+              <div class="player__info_block">
+                <p>detroit pistons | #24 | Guard</p>
+                <h2 class="player-head__title">Daniss Jenkins</h2>
+              </div>
+              <div class="player-head__logo_block">
+                <img
+                  class="player-head__logo"
+                  src="/images/f806ef68782fe6549aa6366d332e057e.png"
+                />
+              </div>
             </div>
-            <div class="player__info_table">
-              <div class="player-info__item flx-clmn"><span>PPG</span>
-                <p class="mb-reset text-bold title-24">1.5</p>
-              </div>
-              <div class="player-info__item flx-clmn"><span>rPG</span>
-                <p class="mb-reset text-bold title-24">0.3</p>
-              </div>
-              <div class="player-info__item flx-clmn"><span>aPG</span>
-                <p class="mb-reset text-bold title-24">0.4</p>
-              </div>
-              <div class="player-info__item flx-clmn"><span>HEIGHT</span>
-                <p class="mb-reset text-bold title-24">191 cm</p>
-              </div>
-              <div class="player-info__item flx-clmn"><span>WEIGHT</span>
-                <p class="mb-reset text-bold title-24">75kg</p>
-              </div>
-              <div class="player-info__item flx-clmn"><span>country</span>
-                <p class="mb-reset text-bold title-24">usa</p>
-              </div>
-              <div class="player-info__item flx-clmn"><span>BIRTHDATE</span>
-                <p class="mb-reset text-bold title-24">17.08. 2001</p>
-              </div>
-              <div class="player-info__item flx-clmn"><span>age</span>
-                <p class="mb-reset text-bold title-24">23</p>
-              </div>
-              <div class="player-info__item flx-clmn"><span>DRAFT</span>
-                <p class="mb-reset text-bold title-24">Undraft</p>
-              </div>
-              <div class="player-info__item flx-clmn"><span>EXPERIENCE</span>
-                <p class="mb-reset text-bold title-24">Rookie</p>
+            <div id="player-splide" class="splide">
+              <div class="splide__track">
+                <ul class="splide__list player__info_table">
+                  <li class="splide__slide">
+                    <div class="player-info__item">
+                      <span>PPG</span>
+                      <p class="player-info__value">1.5</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="player-info__item">
+                      <span>rPG</span>
+                      <p class="player-info__value">0.3</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="player-info__item">
+                      <span>aPG</span>
+                      <p class="player-info__value">0.4</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="player-info__item">
+                      <span>HEIGHT</span>
+                      <p class="player-info__value">191 cm</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="player-info__item">
+                      <span>WEIGHT</span>
+                      <p class="player-info__value">75kg</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="player-info__item">
+                      <span>country</span>
+                      <p class="player-info__value">usa</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="player-info__item">
+                      <span>BIRTHDATE</span>
+                      <p class="player-info__value">17.08. 2001</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="player-info__item">
+                      <span>age</span>
+                      <p class="player-info__value">23</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="player-info__item">
+                      <span>DRAFT</span>
+                      <p class="player-info__value">Undraft</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="player-info__item">
+                      <span>EXPERIENCE</span>
+                      <p class="player-info__value">Rookie</p>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-        <div class="about__section mb-50">
+        </section>
+        <section class="about__section section--mb">
           <div class="container">
-            <div class="title__block"><img class="title__icon" src="/images/5b5bf224d95444be634906bb0050c5d3.png" />
-              <h2 class="mb-reset title">Player Bio</h2>
+            <div class="title__block">
+              <img
+                class="title__icon"
+                src="/images/5b5bf224d95444be634906bb0050c5d3.png"
+              />
+              <h2 class="title">Player Bio</h2>
             </div>
-            <div class="about__content grid-cols-2">
-              <div class="h-100pcr image-block"><img class="media__img ibg" src="/images/21b3f8779898754fcbebfb4dca4f692b.webp" /></div>
+            <div class="about__content">
+              <div class="about__img_block">
+                <img
+                  class="about__img"
+                  src="/images/21b3f8779898754fcbebfb4dca4f692b.webp"
+                />
+              </div>
               <div class="post__text_block">
-                <p>Registered his 1,000th career point against North Texas (11/16), scoring 17 points to go with five boards and three assists in a season-high 38 minutes of work...Recorded 19 points, eight assists, four rebounds and three steals against Utah in third-place game victory against Utah (11/19)...Nearly recorded a triple-double with 21 points, nine rebounds and eight assists against Hofstra (12/30).</p>
-                <p>2023-24 (St. John&#039;s): Named to the All-BIG EAST Second Team, All-BIG EAST Tournament Team and All-Met First Team... Started all 33 games for St. John&#039;s and averaged a team-best 14.9 points and 1.6 steals per game...Ranked 33rd in NCAA Division I with 5.4 assists per contest...Shot .446 FG% and .354 3PT%...Scored 10+ points in 28 of 33 games.</p>
-                <p class="reset">Averaged 15.0 points and 5.3 assists per game in 34 starts ... Earned NJCAA Division I All-America First Team honors ... Named the Western Junior College Athletic Conference (WJCAC) Player of the Year...2019-21 (University of the Pacific): Began collegiate career at the University of the Pacific (2019-21), playing two seasons in the West Coast Conference (WCC) </p>
+                <p>
+                  Registered his 1,000th career point against North Texas
+                  (11/16), scoring 17 points to go with five boards and three
+                  assists in a season-high 38 minutes of work...Recorded 19
+                  points, eight assists, four rebounds and three steals against
+                  Utah in third-place game victory against Utah (11/19)...Nearly
+                  recorded a triple-double with 21 points, nine rebounds and
+                  eight assists against Hofstra (12/30).
+                </p>
+                <p>
+                  2023-24 (St. Johs): Named to the All-BIG EAST Second Team,
+                  All-BIG EAST Tournament Team and All-Met First Team... Started
+                  all 33 games for St. Johns and averaged a team-best 14.9
+                  points and 1.6 steals per game...Ranked 33rd in NCAA Division
+                  I with 5.4 assists per contest...Shot .446 FG% and .354
+                  3PT%...Scored 10+ points in 28 of 33 games.
+                </p>
+                <p>
+                  Averaged 15.0 points and 5.3 assists per game in 34 starts ...
+                  Earned NJCAA Division I All-America First Team honors ...
+                  Named the Western Junior College Athletic Conference (WJCAC)
+                  Player of the Year...2019-21 (University of the Pacific):
+                  Began collegiate career at the University of the Pacific
+                  (2019-21), playing two seasons in the West Coast Conference
+                  (WCC)
+                </p>
+                <p>
+                  The Detroit Pistons are a professional basketball team based
+                  in Detroit, Michigan, and are a member of the Central Division
+                  in the Eastern Conference of the NBA. Founded in 1941 as the
+                  Fort Wayne Zollner Pistons, the franchise moved to Detroit in
+                  1957 and became known as the Detroit Pistons.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="player-stats__section mb-50">
+        </section>
+        <section class="player-stats__section section--mb">
           <div class="container">
-            <div class="title__block"><img class="title__icon" src="/images/5b5bf224d95444be634906bb0050c5d3.png" />
-              <h2 class="mb-reset title">Traditional Splits
-              </h2>
+            <div class="title__block">
+              <img
+                class="title__icon"
+                src="/images/5b5bf224d95444be634906bb0050c5d3.png"
+              />
+              <h2 class="title">Traditional Splits</h2>
             </div>
-            <div class="table__wrap">
-              <div class="tbl__head grid-player-table"><span>By Year</span><span class="text-left">TEAM</span><span> GP</span><span>MIN</span><span>PTS</span><span>FGM </span><span>FGA</span><span>FG% </span><span>3PM</span><span>3PA </span><span>3P% </span><span>FTM</span><span>FTA</span><span>FT%</span><span>OREB</span><span>DREB </span><span>reb</span><span>AST </span><span>TOV</span><span>STL</span><span>BLK</span><span>PF </span><span>FP </span><span>DD2</span><span>TD3</span><span>+/-</span></div>
-              <div class="grid-player-table tbl__body"><span class="mat0lx0d f9p0fzsv">2024 - pr</span><a href="#" class="hover-text link-reset media-title-20 text-left">det</a><span>21</span><span>32.5</span><span>47.2</span><span>11.3</span><span>15.4</span><span>21.5</span><span>42.6</span><span>73.9</span><span>85.4</span><span>9.2</span><span>18.5</span><span>10.2</span><span>17.4</span><span>54.2</span><span>11.3</span><span>15.8</span><span>19.2</span><span>65.2</span><span>21.9</span><span>69.2</span><span>3.8</span><span>9.7</span><span>12.4</span><span>-2.7</span></div>
-              <div class="grid-player-table tbl__body"><span class="mat0lx0d f9p0fzsv">2022 - 24</span><a href="#" class="hover-text link-reset media-title-20 text-left">col</a><span>21</span><span>32.5</span><span>47.2</span><span>11.3</span><span>15.4</span><span>21.5</span><span>42.6</span><span>73.9</span><span>85.4</span><span>9.2</span><span>18.5</span><span>10.2</span><span>17.4</span><span>54.2</span><span>11.3</span><span>15.8</span><span>19.2</span><span>65.2</span><span>21.9</span><span>69.2</span><span>3.8</span><span>9.7</span><span>12.4</span><span>-2.7</span></div>
-              <div class="grid-player-table tbl__body"><span class="mat0lx0d f9p0fzsv">2019- 22</span><a href="#" class="hover-text link-reset media-title-20 text-left">bos</a><span>21</span><span>32.5</span><span>47.2</span><span>11.3</span><span>15.4</span><span>21.5</span><span>42.6</span><span>73.9</span><span>85.4</span><span>9.2</span><span>18.5</span><span>10.2</span><span>17.4</span><span>54.2</span><span>11.3</span><span>15.8</span><span>19.2</span><span>65.2</span><span>21.9</span><span>69.2</span><span>3.8</span><span>9.7</span><span>12.4</span><span>-2.7</span></div>
-              <div class="grid-player-table tbl__body"><span class="mat0lx0d f9p0fzsv">2018 - 19</span><a href="#" class="hover-text link-reset media-title-20 text-left">chi</a><span>21</span><span>32.5</span><span>47.2</span><span>11.3</span><span>15.4</span><span>21.5</span><span>42.6</span><span>73.9</span><span>85.4</span><span>9.2</span><span>18.5</span><span>10.2</span><span>17.4</span><span>54.2</span><span>11.3</span><span>15.8</span><span>19.2</span><span>65.2</span><span>21.9</span><span>69.2</span><span>3.8</span><span>9.7</span><span>12.4</span><span>-2.7</span></div>
-              <div class="grid-player-table tbl__body"><span class="mat0lx0d f9p0fzsv">2016 - 18</span><a href="#" class="hover-text link-reset media-title-20 text-left">cli</a><span>21</span><span>32.5</span><span>47.2</span><span>11.3</span><span>15.4</span><span>21.5</span><span>42.6</span><span>73.9</span><span>85.4</span><span>9.2</span><span>18.5</span><span>10.2</span><span>17.4</span><span>54.2</span><span>11.3</span><span>15.8</span><span>19.2</span><span>65.2</span><span>21.9</span><span>69.2</span><span>3.8</span><span>9.7</span><span>12.4</span><span>-2.7</span></div>
+            <div class="table__wrap player-table">
+              <div class="tbl__head grid-player-tbl">
+                <span>By Year</span><span class="text-left">TEAM</span
+                ><span> GP</span><span>MIN</span><span>PTS</span
+                ><span>FGM </span><span>FGA</span><span>FG% </span
+                ><span>3PM</span><span>3PA </span><span>3P% </span
+                ><span>FTM</span><span>FTA</span><span>FT%</span
+                ><span>OREB</span><span>DREB </span><span>reb</span
+                ><span>AST </span><span>TOV</span><span>STL</span
+                ><span>BLK</span><span>PF </span><span>FP </span><span>DD2</span
+                ><span>TD3</span><span>+/-</span>
+              </div>
+
+              <div class="grid-player-tbl tbl__body">
+                <span class="mat0lx0d f9p0fzsv">2024 - pr</span>
+                <a href="#" class="text-left">det</a>
+                <span>21</span><span>32.5</span><span>47.2</span>
+                <span>11.3</span><span>15.4</span><span>21.5</span>
+                <span>42.6</span><span>73.9</span><span>85.4</span>
+                <span>9.2</span><span>18.5</span><span>10.2</span>
+                <span>17.4</span><span>54.2</span><span>11.3</span>
+                <span>15.8</span><span>19.2</span><span>65.2</span>
+                <span>21.9</span><span>69.2</span><span>3.8</span>
+                <span>9.7</span><span>12.4</span><span>-2.7</span>
+              </div>
+
+              <div class="grid-player-tbl tbl__body">
+                <span class="mat0lx0d f9p0fzsv">2022 - 24</span>
+                <a href="#" class="text-left">col</a>
+                <span>21</span><span>32.5</span><span>47.2</span>
+                <span>11.3</span><span>15.4</span><span>21.5</span>
+                <span>42.6</span><span>73.9</span><span>85.4</span>
+                <span>9.2</span><span>18.5</span><span>10.2</span>
+                <span>17.4</span><span>54.2</span><span>11.3</span>
+                <span>15.8</span><span>19.2</span><span>65.2</span>
+                <span>21.9</span><span>69.2</span><span>3.8</span>
+                <span>9.7</span><span>12.4</span><span>-2.7</span>
+              </div>
+
+              <div class="grid-player-tbl tbl__body">
+                <span class="mat0lx0d f9p0fzsv">2019- 22</span>
+                <a href="#" class="text-left">bos</a>
+                <span>21</span><span>32.5</span><span>47.2</span>
+                <span>11.3</span><span>15.4</span><span>21.5</span>
+                <span>42.6</span><span>73.9</span><span>85.4</span>
+                <span>9.2</span><span>18.5</span><span>10.2</span>
+                <span>17.4</span><span>54.2</span><span>11.3</span>
+                <span>15.8</span><span>19.2</span><span>65.2</span>
+                <span>21.9</span><span>69.2</span><span>3.8</span>
+                <span>9.7</span><span>12.4</span><span>-2.7</span>
+              </div>
+
+              <div class="grid-player-tbl tbl__body">
+                <span class="mat0lx0d f9p0fzsv">2018 - 19</span>
+                <a href="#" class="text-left">chi</a>
+                <span>21</span><span>32.5</span><span>47.2</span>
+                <span>11.3</span><span>15.4</span><span>21.5</span>
+                <span>42.6</span><span>73.9</span><span>85.4</span>
+                <span>9.2</span><span>18.5</span><span>10.2</span>
+                <span>17.4</span><span>54.2</span><span>11.3</span>
+                <span>15.8</span><span>19.2</span><span>65.2</span>
+                <span>21.9</span><span>69.2</span><span>3.8</span>
+                <span>9.7</span><span>12.4</span><span>-2.7</span>
+              </div>
+
+              <div class="grid-player-tbl tbl__body">
+                <span class="mat0lx0d f9p0fzsv">2016 - 18</span>
+                <a href="#" class="text-left">cli</a>
+                <span>21</span><span>32.5</span><span>47.2</span>
+                <span>11.3</span><span>15.4</span><span>21.5</span>
+                <span>42.6</span><span>73.9</span><span>85.4</span>
+                <span>9.2</span><span>18.5</span><span>10.2</span>
+                <span>17.4</span><span>54.2</span><span>11.3</span>
+                <span>15.8</span><span>19.2</span><span>65.2</span>
+                <span>21.9</span><span>69.2</span><span>3.8</span>
+                <span>9.7</span><span>12.4</span><span>-2.7</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="mb-50 team-news__section">
+        </section>
+        <section class="news__slider section--mb">
           <div class="container">
-            <div class="title__block"><img class="title__icon" src="/images/5b5bf224d95444be634906bb0050c5d3.png" />
-              <h2 class="mb-reset title">player news</h2>
+            <div class="title__block">
+              <img
+                class="title__icon"
+                src="/images/5b5bf224d95444be634906bb0050c5d3.png"
+              />
+              <h2 class="title">player news</h2>
             </div>
-            <div class="media__rows grid-col-4">
-              <div class="media__item"><a href="#" class="image-block link-reset pb-80pcr"><img class="ibg media__img hover-scale" src="/images/77306da620fb6fc9a3c368616f9fe0cf.webp" />
-                  <div class="label">
-                    <p class="mb-reset">10.04.2025</p>
-                  </div>
-                </a>
-                <div class="media__footer flx-clmn"><a href="#" class="link-reset media-title-20 hover-text"> James Signs One-Year Extension With Lakers</a>
-                  <p class="mb-reset">The 39-year-old veteran has committed to another season with the Lakers, keeping the championship hopes </p>
+            <div class="swiper custom__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__item">
+                    <a href="#" class="image-block news-card__img_block"
+                      ><img
+                        class="ibg media__img hover-scale"
+                        src="/images/77306da620fb6fc9a3c368616f9fe0cf.webp"
+                      />
+                      <div class="label">
+                        <p>10.04.2025</p>
+                      </div>
+                    </a>
+                    <div class="news__footer">
+                      <a href="#" class="news__title hover-text">
+                        James Signs One-Year Extension With Lakers</a
+                      >
+                      <p class="news__description">
+                        The 39-year-old veteran has committed to another season
+                        with the Lakers, keeping the championship hopes
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__item">
+                    <a href="#" class="image-block news-card__img_block"
+                      ><img
+                        class="ibg media__img hover-scale"
+                        src="/images/6010e311d1cb1e040dc36a471cde2275.jpg"
+                      />
+                      <div class="label">
+                        <p>11.04.2025</p>
+                      </div>
+                    </a>
+                    <div class="news__footer">
+                      <a href="#" class="news__title hover-text"
+                        >Victor Wembanyama Named NBA Rookie
+                      </a>
+                      <p class="news__description">
+                        The Spurs sensation impressed fans and critics alike
+                        with his shot-blocking, scoring, and playmaking
+                        throughout the season.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__item">
+                    <a href="#" class="image-block news-card__img_block"
+                      ><img
+                        class="ibg media__img hover-scale"
+                        src="/images/b3a3e1d808fddc4899bcb136ae0e8fc9.webp"
+                      />
+                      <div class="label">
+                        <p>12.04.2025</p>
+                      </div>
+                    </a>
+                    <div class="news__footer">
+                      <a href="#" class="news__title hover-text"
+                        >Celtics Clinch Top Seed in Eastern Conference</a
+                      >
+                      <p class="news__description">
+                        With a dominant regular season, Boston secures the #1
+                        spot, ensuring home-court advantage through the East
+                        playoffs.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__item">
+                    <a href="#" class="image-block news-card__img_block"
+                      ><img
+                        class="ibg media__img hover-scale"
+                        src="/images/978fafc89cc60fe334ed074a4e4e0a45.webp"
+                      />
+                      <div class="label">
+                        <p>14.04.2025</p>
+                      </div>
+                    </a>
+                    <div class="news__footer">
+                      <a href="#" class="news__title hover-text"
+                        >Stephen Curry Drops 50 in Warriors Win Over Suns</a
+                      >
+                      <p class="news__description">
+                        Curry turned back the clock with a 50-point explosion,
+                        helping Golden State grab a crucial late-season win.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__item">
+                    <a href="#" class="image-block news-card__img_block"
+                      ><img
+                        class="ibg media__img hover-scale"
+                        src="/images/77306da620fb6fc9a3c368616f9fe0cf.webp"
+                      />
+                      <div class="label">
+                        <p>10.04.2025</p>
+                      </div>
+                    </a>
+                    <div class="news__footer">
+                      <a href="#" class="news__title hover-text">
+                        James Signs One-Year Extension With Lakers</a
+                      >
+                      <p class="news__description">
+                        The 39-year-old veteran has committed to another season
+                        with the Lakers, keeping the championship hopes
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__item">
+                    <a href="#" class="image-block news-card__img_block"
+                      ><img
+                        class="ibg media__img hover-scale"
+                        src="/images/6010e311d1cb1e040dc36a471cde2275.jpg"
+                      />
+                      <div class="label">
+                        <p>11.04.2025</p>
+                      </div>
+                    </a>
+                    <div class="news__footer">
+                      <a href="#" class="news__title hover-text"
+                        >Victor Wembanyama Named NBA Rookie
+                      </a>
+                      <p class="news__description">
+                        The Spurs sensation impressed fans and critics alike
+                        with his shot-blocking, scoring, and playmaking
+                        throughout the season.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__item">
+                    <a href="#" class="image-block news-card__img_block"
+                      ><img
+                        class="ibg media__img hover-scale"
+                        src="/images/b3a3e1d808fddc4899bcb136ae0e8fc9.webp"
+                      />
+                      <div class="label">
+                        <p>12.04.2025</p>
+                      </div>
+                    </a>
+                    <div class="news__footer">
+                      <a href="#" class="news__title hover-text"
+                        >Celtics Clinch Top Seed in Eastern Conference</a
+                      >
+                      <p class="news__description">
+                        With a dominant regular season, Boston secures the #1
+                        spot, ensuring home-court advantage through the East
+                        playoffs.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__item">
+                    <a href="#" class="image-block news-card__img_block"
+                      ><img
+                        class="ibg media__img hover-scale"
+                        src="/images/978fafc89cc60fe334ed074a4e4e0a45.webp"
+                      />
+                      <div class="label">
+                        <p>14.04.2025</p>
+                      </div>
+                    </a>
+                    <div class="news__footer">
+                      <a href="#" class="news__title hover-text"
+                        >Stephen Curry Drops 50 in Warriors Win Over Suns</a
+                      >
+                      <p class="news__description">
+                        Curry turned back the clock with a 50-point explosion,
+                        helping Golden State grab a crucial late-season win.
+                      </p>
+                    </div>
+                  </article>
                 </div>
               </div>
-              <div class="media__item"><a href="#" class="image-block link-reset pb-80pcr"><img class="ibg media__img hover-scale" src="/images/6010e311d1cb1e040dc36a471cde2275.jpg" />
-                  <div class="label">
-                    <p class="mb-reset">11.04.2025</p>
-                  </div>
-                </a>
-                <div class="media__footer flx-clmn"><a href="#" class="link-reset media-title-20 hover-text">Victor Wembanyama Named NBA Rookie </a>
-                  <p class="mb-reset">The Spurs sensation impressed fans and critics alike with his shot-blocking, scoring, and playmaking throughout the season.</p>
-                </div>
-              </div>
-              <div class="media__item"><a href="#" class="image-block link-reset pb-80pcr"><img class="ibg media__img hover-scale" src="/images/b3a3e1d808fddc4899bcb136ae0e8fc9.webp" />
-                  <div class="label">
-                    <p class="mb-reset">12.04.2025</p>
-                  </div>
-                </a>
-                <div class="media__footer flx-clmn"><a href="#" class="link-reset media-title-20 hover-text">Celtics Clinch Top Seed in Eastern Conference</a>
-                  <p class="mb-reset">With a dominant regular season, Boston secures the #1 spot, ensuring home-court advantage through the East playoffs.</p>
-                </div>
-              </div>
-              <div class="media__item"><a href="#" class="image-block link-reset pb-80pcr"><img class="ibg media__img hover-scale" src="/images/978fafc89cc60fe334ed074a4e4e0a45.webp" />
-                  <div class="label">
-                    <p class="mb-reset">14.04.2025</p>
-                  </div>
-                </a>
-                <div class="media__footer flx-clmn"><a href="#" class="link-reset media-title-20 hover-text">Stephen Curry Drops 50 in Warriors Win Over Suns</a>
-                  <p class="mb-reset">Curry turned back the clock with a 50-point explosion, helping Golden State grab a crucial late-season win.</p>
-                </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="mb-50 team-video__section">
+        </section>
+        <section class="video__section section--mb">
           <div class="container">
-            <div class="title__block"><img class="title__icon" src="/images/5b5bf224d95444be634906bb0050c5d3.png" />
-              <h2 class="mb-reset title">player video</h2>
+            <div class="title__block">
+              <img
+                class="title__icon"
+                src="/images/5b5bf224d95444be634906bb0050c5d3.png"
+              />
+              <h2 class="title">player video</h2>
             </div>
-            <div class="video__items_rows grid-cols-3">
-              <div class="media__item"><a href="#" class="image-block link-reset pb-60pcr"><img class="ibg media__img" src="/images/978fafc89cc60fe334ed074a4e4e0a45.webp" />
-                  <div class="label">
-                    <p class="mb-reset">11.04.2025</p>
-                  </div><img src="/images/2739c34f008c94023dafd8bf056a7e2a.png" class="hover-scale play__icon play__icon--20pcr" />
-                  <div class="overlay ibg"></div>
-                </a>
-                <div class="bg-grey video__footer"><a href="#" class="link-reset media-title-20 hover-text">kniks - brooklyn </a></div>
+            <div class="swiper custom__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="video__item video__slider_item">
+                    <a href="#" class="image-block video-slider__img_block">
+                      <img
+                        class="ibg media__img"
+                        src="/images/b3a3e1d808fddc4899bcb136ae0e8fc9.webp"
+                      />
+                      <div class="video-slider__label">
+                        <p>12.04.2025</p>
+                      </div>
+                      <img
+                        src="/images/2739c34f008c94023dafd8bf056a7e2a.png"
+                        class="hover-scale play__icon play__icon--20pcr"
+                      />
+                      <div class="overlay ibg"></div>
+                    </a>
+                    <div class="media__footer flx-clmn">
+                      <a href="#" class="video-slider__title hover-text"
+                        >sparks - miami</a
+                      >
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="video__item video__slider_item">
+                    <a href="#" class="image-block video-slider__img_block">
+                      <img
+                        class="ibg media__img"
+                        src="/images/978fafc89cc60fe334ed074a4e4e0a45.webp"
+                      />
+                      <div class="video-slider__label">
+                        <p>10.04.2025</p>
+                      </div>
+                      <img
+                        src="/images/2739c34f008c94023dafd8bf056a7e2a.png"
+                        class="hover-scale play__icon play__icon--20pcr"
+                      />
+                      <div class="overlay ibg"></div>
+                    </a>
+                    <div class="media__footer flx-clmn">
+                      <a href="#" class="video-slider__title hover-text"
+                        >boston - toronto</a
+                      >
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="video__item video__slider_item">
+                    <a href="#" class="image-block video-slider__img_block">
+                      <img
+                        class="ibg media__img"
+                        src="/images/77306da620fb6fc9a3c368616f9fe0cf.webp"
+                      />
+                      <div class="video-slider__label">
+                        <p>10.04.2025</p>
+                      </div>
+                      <img
+                        src="/images/2739c34f008c94023dafd8bf056a7e2a.png"
+                        class="hover-scale play__icon play__icon--20pcr"
+                      />
+                      <div class="overlay ibg"></div>
+                    </a>
+                    <div class="media__footer flx-clmn">
+                      <a href="#" class="video-slider__title hover-text"
+                        >boston - toronto</a
+                      >
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="video__item video__slider_item">
+                    <a href="#" class="image-block video-slider__img_block">
+                      <img
+                        class="ibg media__img"
+                        src="/images/6010e311d1cb1e040dc36a471cde2275.jpg"
+                      />
+                      <div class="video-slider__label">
+                        <p>12.04.2025</p>
+                      </div>
+                      <img
+                        src="/images/2739c34f008c94023dafd8bf056a7e2a.png"
+                        class="hover-scale play__icon play__icon--20pcr"
+                      />
+                      <div class="overlay ibg"></div>
+                    </a>
+                    <div class="media__footer flx-clmn">
+                      <a href="#" class="video-slider__title hover-text"
+                        >sparks - miami</a
+                      >
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="video__item video__slider_item">
+                    <a href="#" class="image-block video-slider__img_block">
+                      <img
+                        class="ibg media__img"
+                        src="/images/b3a3e1d808fddc4899bcb136ae0e8fc9.webp"
+                      />
+                      <div class="video-slider__label">
+                        <p>12.04.2025</p>
+                      </div>
+                      <img
+                        src="/images/2739c34f008c94023dafd8bf056a7e2a.png"
+                        class="hover-scale play__icon play__icon--20pcr"
+                      />
+                      <div class="overlay ibg"></div>
+                    </a>
+                    <div class="media__footer flx-clmn">
+                      <a href="#" class="video-slider__title hover-text"
+                        >sparks - miami</a
+                      >
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="video__item video__slider_item">
+                    <a href="#" class="image-block video-slider__img_block">
+                      <img
+                        class="ibg media__img"
+                        src="/images/978fafc89cc60fe334ed074a4e4e0a45.webp"
+                      />
+                      <div class="video-slider__label">
+                        <p>10.04.2025</p>
+                      </div>
+                      <img
+                        src="/images/2739c34f008c94023dafd8bf056a7e2a.png"
+                        class="hover-scale play__icon play__icon--20pcr"
+                      />
+                      <div class="overlay ibg"></div>
+                    </a>
+                    <div class="media__footer flx-clmn">
+                      <a href="#" class="video-slider__title hover-text"
+                        >boston - toronto</a
+                      >
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="video__item video__slider_item">
+                    <a href="#" class="image-block video-slider__img_block">
+                      <img
+                        class="ibg media__img"
+                        src="/images/77306da620fb6fc9a3c368616f9fe0cf.webp"
+                      />
+                      <div class="video-slider__label">
+                        <p>10.04.2025</p>
+                      </div>
+                      <img
+                        src="/images/2739c34f008c94023dafd8bf056a7e2a.png"
+                        class="hover-scale play__icon play__icon--20pcr"
+                      />
+                      <div class="overlay ibg"></div>
+                    </a>
+                    <div class="media__footer flx-clmn">
+                      <a href="#" class="video-slider__title hover-text"
+                        >boston - toronto</a
+                      >
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="video__item video__slider_item">
+                    <a href="#" class="image-block video-slider__img_block">
+                      <img
+                        class="ibg media__img"
+                        src="/images/6010e311d1cb1e040dc36a471cde2275.jpg"
+                      />
+                      <div class="video-slider__label">
+                        <p>12.04.2025</p>
+                      </div>
+                      <img
+                        src="/images/2739c34f008c94023dafd8bf056a7e2a.png"
+                        class="hover-scale play__icon play__icon--20pcr"
+                      />
+                      <div class="overlay ibg"></div>
+                    </a>
+                    <div class="media__footer flx-clmn">
+                      <a href="#" class="video-slider__title hover-text"
+                        >sparks - miami</a
+                      >
+                    </div>
+                  </article>
+                </div>
               </div>
-              <div class="media__item"><a href="#" class="image-block link-reset pb-60pcr"><img class="ibg media__img" src="/images/6b18b0843261e790db3a4290f5dbe446.webp" />
-                  <div class="label">
-                    <p class="mb-reset">12.04.2025</p>
-                  </div><img src="/images/2739c34f008c94023dafd8bf056a7e2a.png" class="hover-scale play__icon play__icon--20pcr" />
-                  <div class="overlay ibg"></div>
-                </a>
-                <div class="video__footer bg-grey"><a href="#" class="link-reset media-title-20 hover-text">sparks - miami </a></div>
-              </div>
-              <div class="media__item"><a href="#" class="image-block link-reset pb-60pcr"><img class="ibg media__img" src="/images/6010e311d1cb1e040dc36a471cde2275.jpg" />
-                  <div class="label">
-                    <p class="mb-reset">10.04.2025</p>
-                  </div><img src="/images/2739c34f008c94023dafd8bf056a7e2a.png" class="hover-scale play__icon play__icon--20pcr" />
-                  <div class="overlay ibg"></div>
-                </a>
-                <div class="video__footer bg-grey"><a href="#" class="link-reset media-title-20 hover-text">boston - toronto</a></div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="players__section mb-50">
+        </section>
+        <section class="players__section section--mb">
           <div class="container">
-            <div class="title__block"><img class="title__icon" src="/images/5b5bf224d95444be634906bb0050c5d3.png" />
-              <h2 class="mb-reset title">related players</h2>
+            <div class="title__block">
+              <img
+                class="title__icon"
+                src="/images/5b5bf224d95444be634906bb0050c5d3.png"
+              />
+              <h2 class="title">related players</h2>
             </div>
-            <div class="players__rows grid-col-4">
-              <div class="player__card"><a href="#" class="image-block link-reset player__img_block"><img class="player__img ibg" src="/images/ae241556ae5a7ee38f1eafb59c6c291f.webp" /></a>
-                <div class="player__footer">
-                  <div class="player__info">
-                    <p class="mb-reset title-32 text-gold">10</p>
-                    <p class="mb-reset">guard</p>
-                  </div><a href="#" class="hover-text link-reset media-title-24">
-                    <p class="mb-reset">Jarrett
-                    </p>
-                    <p class="mb-reset">Jacksons</p>
-                  </a>
+            <div class="swiper custom__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="image-block player__img_block">
+                      <img
+                        class="player__img ibg"
+                        src="/images/3a83fac9b00acb20ee66db66fd7fe27a.png"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <div class="player__info">
+                        <p class="player__number text-gold">15</p>
+                        <p>center</p>
+                      </div>
+                      <a href="#" class="hover-text player__name">
+                        <p>ronald</p>
+                        <p>holland</p>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="image-block player__img_block">
+                      <img
+                        class="player__img ibg"
+                        src="/images/85ecc760ca95085683a211c28e5a82b6.webp"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <div class="player__info">
+                        <p class="player__number text-gold">25</p>
+                        <p>forward</p>
+                      </div>
+                      <a href="#" class="hover-text player__name">
+                        <p>martin</p>
+                        <p>frtighten</p>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="image-block player__img_block">
+                      <img
+                        class="player__img ibg"
+                        src="/images/ae3ee5f68e9ea36594d5db69d6b9dcf2.png"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <div class="player__info">
+                        <p class="player__number text-gold">36</p>
+                        <p>guard</p>
+                      </div>
+                      <a href="#" class="hover-text player__name">
+                        <p>tomas</p>
+                        <p>bilton</p>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="image-block player__img_block">
+                      <img
+                        class="player__img ibg"
+                        src="/images/72637d9c73f21242a0320fec9d214194.webp"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <div class="player__info">
+                        <p class="player__number text-gold">36</p>
+                        <p>guard</p>
+                      </div>
+                      <a href="#" class="hover-text player__name">
+                        <p>tomas</p>
+                        <p>bilton</p>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="image-block player__img_block">
+                      <img
+                        class="player__img ibg"
+                        src="/images/3a83fac9b00acb20ee66db66fd7fe27a.png"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <div class="player__info">
+                        <p class="player__number text-gold">15</p>
+                        <p>center</p>
+                      </div>
+                      <a href="#" class="hover-text player__name">
+                        <p>ronald</p>
+                        <p>holland</p>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="image-block player__img_block">
+                      <img
+                        class="player__img ibg"
+                        src="/images/85ecc760ca95085683a211c28e5a82b6.webp"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <div class="player__info">
+                        <p class="player__number text-gold">25</p>
+                        <p>forward</p>
+                      </div>
+                      <a href="#" class="hover-text player__name">
+                        <p>martin</p>
+                        <p>frtighten</p>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="image-block player__img_block">
+                      <img
+                        class="player__img ibg"
+                        src="/images/ae3ee5f68e9ea36594d5db69d6b9dcf2.png"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <div class="player__info">
+                        <p class="player__number text-gold">36</p>
+                        <p>guard</p>
+                      </div>
+                      <a href="#" class="hover-text player__name">
+                        <p>tomas</p>
+                        <p>bilton</p>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="image-block player__img_block">
+                      <img
+                        class="player__img ibg"
+                        src="/images/72637d9c73f21242a0320fec9d214194.webp"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <div class="player__info">
+                        <p class="player__number text-gold">36</p>
+                        <p>guard</p>
+                      </div>
+                      <a href="#" class="hover-text player__name">
+                        <p>tomas</p>
+                        <p>bilton</p>
+                      </a>
+                    </div>
+                  </article>
                 </div>
               </div>
-              <div class="player__card"><a href="#" class="image-block link-reset player__img_block"><img class="player__img ibg" src="/images/3a83fac9b00acb20ee66db66fd7fe27a.png" /></a>
-                <div class="player__footer">
-                  <div class="player__info">
-                    <p class="mb-reset title-32 text-gold">15</p>
-                    <p class="mb-reset">center</p>
-                  </div><a href="#" class="hover-text link-reset media-title-24">
-                    <p class="mb-reset">ronald
-                    </p>
-                    <p class="mb-reset"> holland</p>
-                  </a>
-                </div>
-              </div>
-              <div class="player__card"><a href="#" class="image-block link-reset player__img_block"><img class="player__img ibg" src="/images/85ecc760ca95085683a211c28e5a82b6.webp" /></a>
-                <div class="player__footer">
-                  <div class="player__info">
-                    <p class="mb-reset title-32 text-gold">25</p>
-                    <p class="mb-reset">forward</p>
-                  </div><a href="#" class="hover-text link-reset media-title-24">
-                    <p class="mb-reset">martin</p>
-                    <p class="mb-reset">frtighten</p>
-                  </a>
-                </div>
-              </div>
-              <div class="player__card"><a href="#" class="image-block link-reset player__img_block"><img class="player__img ibg" src="/images/ae3ee5f68e9ea36594d5db69d6b9dcf2.png" /></a>
-                <div class="player__footer">
-                  <div class="player__info">
-                    <p class="mb-reset title-32 text-gold">36</p>
-                    <p class="mb-reset">guard </p>
-                  </div><a href="#" class="hover-text link-reset media-title-24">
-                    <p class="mb-reset">tomas </p>
-                    <p class="mb-reset">bilton</p>
-                  </a>
-                </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="footer">
+        </section>
+      </main>
+      <footer class="footer">
         <div class="container">
-          <div class="footer__content flx-btwn">
-            <div class="footer__nav_menu flx-btwn">
-              <div class="footer-nav__item flx-clmn">
-                <h4 class="mb-reset text-gold title-22">nba organization</h4>
-                <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer__link">nba id</a><a href="#" class="hover-text link-reset footer__link">NBA Official</a><a href="#" class="hover-text link-reset footer__link">NBA Careers</a><a href="#" class="hover-text link-reset footer__link">NBA Fan Code of Conduct</a></div>
-              </div>
-              <div class="footer-nav__item flx-clmn">
-                <h4 class="mb-reset text-gold title-22">nba initiatives</h4>
-                <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer__link">NBA Total Health</a><a href="#" class="hover-text link-reset footer__link">NBA Cares</a><a href="#" class="hover-text link-reset footer__link">Jr. NBA / Jr. WNBA</a><a href="#" class="hover-text link-reset footer__link">NBA Foundation</a><a href="#" class="hover-text link-reset footer__link">Social Justice Coalition</a></div>
-              </div>
-              <div class="footer-nav__item flx-clmn">
-                <h4 class="mb-reset text-gold title-22">across the league</h4>
-                <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer__link">NBA Communications</a><a href="#" class="hover-text link-reset footer__link">Lockervision</a><a href="#" class="hover-text link-reset footer__link">NBA Transactions</a><a href="#" class="hover-text link-reset footer__link">NBA news</a></div>
-              </div>
-              <div class="footer-nav__item flx-clmn">
-                <h4 class="mb-reset text-gold title-22">shop</h4>
-                <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer__link">NBA Photostore</a><a href="#" class="hover-text link-reset footer__link">NBA Auctions</a><a href="#" class="hover-text link-reset footer__link">NYC Store</a><a href="#" class="hover-text link-reset footer__link">Global Stores</a></div>
+          <div class="footer__content">
+            <div class="footer-nav__item">
+              <h4 class="text-gold footer__title">nba organization</h4>
+              <div class="footer-nav__links">
+                <a href="#" class="hover-text footer__link">nba id</a
+                ><a href="#" class="hover-text footer__link">NBA Official</a
+                ><a href="#" class="hover-text footer__link">NBA Careers</a
+                ><a href="#" class="hover-text footer__link"
+                  >NBA Fan Code of Conduct</a
+                >
               </div>
             </div>
-            <div class="footer-nav__item flx-clmn">
-              <h4 class="mb-reset text-gold title-22">subscriptions</h4>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="link-reset link__btn">subscribe</a></div>
+            <div class="footer-nav__item">
+              <h4 class="text-gold footer__title">nba initiatives</h4>
+              <div class="footer-nav__links">
+                <a href="#" class="hover-text footer__link">NBA Total Health</a
+                ><a href="#" class="hover-text footer__link">NBA Cares</a
+                ><a href="#" class="hover-text footer__link"
+                  >Jr. NBA / Jr. WNBA</a
+                ><a href="#" class="hover-text footer__link">NBA Foundation</a
+                ><a href="#" class="hover-text footer__link"
+                  >Social Justice Coalition</a
+                >
+              </div>
+            </div>
+            <div class="footer-nav__item">
+              <h4 class="text-gold footer__title">across the league</h4>
+              <div class="footer-nav__links">
+                <a href="#" class="hover-text footer__link"
+                  >NBA Communications</a
+                ><a href="#" class="hover-text footer__link">Lockervision</a
+                ><a href="#" class="hover-text footer__link">NBA Transactions</a
+                ><a href="#" class="hover-text footer__link">NBA news</a>
+              </div>
+            </div>
+            <div class="footer-nav__item">
+              <h4 class="text-gold footer__title">shop</h4>
+              <div class="footer-nav__links">
+                <a href="#" class="hover-text footer__link">NBA Photostore</a
+                ><a href="#" class="hover-text footer__link">NBA Auctions</a
+                ><a href="#" class="hover-text footer__link">NYC Store</a
+                ><a href="#" class="hover-text footer__link">Global Stores</a>
+              </div>
+            </div>
+            <div class="footer-nav__item">
+              <h4 class="text-gold footer__title">subscriptions</h4>
+              <div class="footer-nav__links">
+                <a href="#" class="link__btn">subscribe</a>
+              </div>
             </div>
           </div>
-          <div class="footer__btm flx-clmn">
-            <p class="mb-reset text-bold">© 2025 NBA Media Ventures, LLC. All rights reserved.</p>
-            <p class="mb-reset">If you are having difficulty accessing any content on this website, please visit our Accessibility page.
-
-              NBA.com is part of Warner Media, LLC’s Turner Sports &amp; Entertainment Digital Network</p>
+          <div class="footer__btm">
+            <p class="text-bold">
+              © 2025 NBA Media Ventures, LLC. All rights reserved.
+            </p>
+            <p>
+              If you are having difficulty accessing any content on this
+              website, please visit our Accessibility page. NBA.com is part of
+              Warner Media, LLC’s Turner Sports &amp; Entertainment Digital
+              Network
+            </p>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/splideSlider.js"></script>
+    <script type="module" src="/js/menuBurger.js"></script>
+    <script type="module" src="/js/swiper.js"></script>
   </body>
-
 </html>

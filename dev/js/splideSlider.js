@@ -3,30 +3,35 @@ import '@splidejs/splide/css';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const splide = new Splide('#video-splide', {
+  const defaultOptions = {
     type: 'loop',
-    perPage: 3,
-    gap: '15px',
     drag: false,
     arrows: false,
     pagination: false,
-    autoWidth: false, // можно убрать perPage если нужен автоширина
     speed: 0,
     easing: 'linear',
-    autoScroll: {
-      speed: 1.5,
-      pauseOnHover: true,
-      pauseOnFocus: true,
-    },
-    breakpoints: {
-      991: { perPage: 2,   gap: '5px', },
-      499: { perPage: 1 },
-    },
+    autoScroll: { speed: 1.3, pauseOnHover: true, pauseOnFocus: true },
+  };
+
+  function initSplide(selector, customOptions = {}) {
+    const element = document.querySelector(selector);
+    if (!element) return; // Если элемента нет, ничего не делаем
+
+    const options = { ...defaultOptions, ...customOptions };
+    new Splide(element, options).mount({ AutoScroll });
+  }
+
+  // Инициализация слайдеров
+  initSplide('#video-splide', {
+    perPage: 3,
+    gap: '15px',
+    autoWidth: false,
+    breakpoints: { 991: { perPage: 2, gap: '5px' }, 499: { perPage: 1 } },
   });
 
-  splide.mount({ AutoScroll });
-
+  initSplide('#player-splide', {
+    gap: '0px',
+    autoWidth: true,
+  });
 });
-
-
 

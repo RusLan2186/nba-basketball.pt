@@ -13,6 +13,7 @@
 @import 'review.css';
 @import 'post.css';
 @import 'team.css';
+@import 'player.css';
 @import 'pagination.css';
 @import 'swiper.css';
 
@@ -220,7 +221,8 @@ body {
   row-gap: 10px;
   align-items: flex-start;
 }
-.label, .video-slider__label {
+.label,
+.video-slider__label {
   background: #b48b4b;
   font-size: 17px;
   font-weight: 600;
@@ -547,63 +549,6 @@ body {
   height: 130px;
 }
 
-.player-head__section {
-  background: #b48b4b;
-  padding-top: 20px;
-}
-.player-head__rows {
-  align-items: center;
-}
-.player__photo_block {
-  padding-bottom: 70%;
-}
-.player__info_block {
-  justify-content: center;
-  font-size: 20px;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  text-transform: capitalize;
-  align-items: center;
-  text-align: center;
-}
-.player-head__logo_block {
-  text-align: center;
-}
-.player-head__logo {
-  height: 220px;
-}
-.player__info_table {
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(255, 255, 255);
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  border-right-width: 0;
-  border-left-width: 0;
-  border-bottom-width: 0;
-}
-.player-info__item {
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(255, 255, 255);
-  border-top-width: 0;
-  border-right-width: 0;
-  border-bottom-width: 0;
-  font-size: 20px;
-  font-weight: 500;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-}
-.player-info__item:last-child {
-  border-right-width: thin;
-}
-.grid-player-table {
-  display: grid;
-  grid-template-columns: 10% repeat(25, 1fr);
-}
-
 @media (max-width: 1199.98px) {
   .title__icon {
     height: 40px;
@@ -614,8 +559,8 @@ body {
     font-size: 40px;
   }
   .title--sm {
-  font-size: 30px;
-}
+    font-size: 30px;
+  }
 
   .title__img--big {
     height: 80px;
@@ -664,7 +609,8 @@ body {
     margin-bottom: 20px;
   }
 
-  .title__icon, .title__icon--sm {
+  .title__icon,
+  .title__icon--sm {
     height: 24px;
     width: 40px;
   }
