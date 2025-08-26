@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>live</title>
-    <meta name="description" content="This is a new page." />
+    <meta name="description" content="This is a live page." />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
-    <div class="body">
+    <div class="wrapper">
       <header class="header">
         <div class="container">
           <div class="header__content">
@@ -88,7 +88,7 @@
         </div>
       </header>
       <main class="main">
-        <section class="lives__section section--mb">
+        <section class="lives__section page--pt section--mb">
           <div class="container">
             <div class="title__block">
               <img
@@ -356,84 +356,75 @@
                 </div>
               </article>
             </div>
+             <div class="pagination__section">
+              <a class="pag__item pag-item__active" href="#">1</a
+              ><a class="pag__item" href="#">2</a
+              ><a class="pag__item" href="#">3</a
+              ><a class="pag__item" href="#">4</a
+              ><a class="pag__item" href="#">5</a
+              ><a class="pag__item" href="#">6</a>
+            </div>
           </div>
         </section>
       </main>
-      <div class="footer">
+      <footer class="footer">
         <div class="container">
-          <div class="footer__content flx-btwn">
-            <div class="footer__nav_menu flx-btwn">
-              <div class="footer-nav__item flx-clmn">
-                <h4 class="mb-reset text-gold title-22">nba organization</h4>
-                <div class="footer-nav__links flx-clmn">
-                  <a href="#" class="hover-text link-reset footer__link"
-                    >nba id</a
-                  ><a href="#" class="hover-text link-reset footer__link"
-                    >NBA Official</a
-                  ><a href="#" class="hover-text link-reset footer__link"
-                    >NBA Careers</a
-                  ><a href="#" class="hover-text link-reset footer__link"
-                    >NBA Fan Code of Conduct</a
-                  >
-                </div>
-              </div>
-              <div class="footer-nav__item flx-clmn">
-                <h4 class="mb-reset text-gold title-22">nba initiatives</h4>
-                <div class="footer-nav__links flx-clmn">
-                  <a href="#" class="hover-text link-reset footer__link"
-                    >NBA Total Health</a
-                  ><a href="#" class="hover-text link-reset footer__link"
-                    >NBA Cares</a
-                  ><a href="#" class="hover-text link-reset footer__link"
-                    >Jr. NBA / Jr. WNBA</a
-                  ><a href="#" class="hover-text link-reset footer__link"
-                    >NBA Foundation</a
-                  ><a href="#" class="hover-text link-reset footer__link"
-                    >Social Justice Coalition</a
-                  >
-                </div>
-              </div>
-              <div class="footer-nav__item flx-clmn">
-                <h4 class="mb-reset text-gold title-22">across the league</h4>
-                <div class="footer-nav__links flx-clmn">
-                  <a href="#" class="hover-text link-reset footer__link"
-                    >NBA Communications</a
-                  ><a href="#" class="hover-text link-reset footer__link"
-                    >Lockervision</a
-                  ><a href="#" class="hover-text link-reset footer__link"
-                    >NBA Transactions</a
-                  ><a href="#" class="hover-text link-reset footer__link"
-                    >NBA news</a
-                  >
-                </div>
-              </div>
-              <div class="footer-nav__item flx-clmn">
-                <h4 class="mb-reset text-gold title-22">shop</h4>
-                <div class="footer-nav__links flx-clmn">
-                  <a href="#" class="hover-text link-reset footer__link"
-                    >NBA Photostore</a
-                  ><a href="#" class="hover-text link-reset footer__link"
-                    >NBA Auctions</a
-                  ><a href="#" class="hover-text link-reset footer__link"
-                    >NYC Store</a
-                  ><a href="#" class="hover-text link-reset footer__link"
-                    >Global Stores</a
-                  >
-                </div>
+          <div class="footer__content">
+            <div class="footer-nav__item">
+              <h4 class="text-gold footer__title">nba organization</h4>
+              <div class="footer-nav__links">
+                <a href="#" class="hover-text footer__link">nba id</a
+                ><a href="#" class="hover-text footer__link">NBA Official</a
+                ><a href="#" class="hover-text footer__link">NBA Careers</a
+                ><a href="#" class="hover-text footer__link"
+                  >NBA Fan Code of Conduct</a
+                >
               </div>
             </div>
-            <div class="footer-nav__item flx-clmn">
-              <h4 class="mb-reset text-gold title-22">subscriptions</h4>
-              <div class="footer-nav__links flx-clmn">
-                <a href="#" class="link-reset link__btn">subscribe</a>
+            <div class="footer-nav__item">
+              <h4 class="text-gold footer__title">nba initiatives</h4>
+              <div class="footer-nav__links">
+                <a href="#" class="hover-text footer__link">NBA Total Health</a
+                ><a href="#" class="hover-text footer__link">NBA Cares</a
+                ><a href="#" class="hover-text footer__link"
+                  >Jr. NBA / Jr. WNBA</a
+                ><a href="#" class="hover-text footer__link">NBA Foundation</a
+                ><a href="#" class="hover-text footer__link"
+                  >Social Justice Coalition</a
+                >
+              </div>
+            </div>
+            <div class="footer-nav__item">
+              <h4 class="text-gold footer__title">across the league</h4>
+              <div class="footer-nav__links">
+                <a href="#" class="hover-text footer__link"
+                  >NBA Communications</a
+                ><a href="#" class="hover-text footer__link">Lockervision</a
+                ><a href="#" class="hover-text footer__link">NBA Transactions</a
+                ><a href="#" class="hover-text footer__link">NBA news</a>
+              </div>
+            </div>
+            <div class="footer-nav__item">
+              <h4 class="text-gold footer__title">shop</h4>
+              <div class="footer-nav__links">
+                <a href="#" class="hover-text footer__link">NBA Photostore</a
+                ><a href="#" class="hover-text footer__link">NBA Auctions</a
+                ><a href="#" class="hover-text footer__link">NYC Store</a
+                ><a href="#" class="hover-text footer__link">Global Stores</a>
+              </div>
+            </div>
+            <div class="footer-nav__item">
+              <h4 class="text-gold footer__title">subscriptions</h4>
+              <div class="footer-nav__links">
+                <a href="#" class="link__btn">subscribe</a>
               </div>
             </div>
           </div>
-          <div class="footer__btm flx-clmn">
-            <p class="mb-reset text-bold">
+          <div class="footer__btm">
+            <p class="text-bold">
               © 2025 NBA Media Ventures, LLC. All rights reserved.
             </p>
-            <p class="mb-reset">
+            <p>
               If you are having difficulty accessing any content on this
               website, please visit our Accessibility page. NBA.com is part of
               Warner Media, LLC’s Turner Sports &amp; Entertainment Digital
@@ -441,7 +432,8 @@
             </p>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
+    <script type="module" src="/js/menuBurger.js"></script>
   </body>
 </html>
