@@ -1,5 +1,6 @@
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 document.addEventListener('DOMContentLoaded', () => {
   const splide = new Splide('#video-splide', {
@@ -9,29 +10,23 @@ document.addEventListener('DOMContentLoaded', () => {
     drag: false,
     arrows: false,
     pagination: false,
-    autoplay: true,
-    interval: 10,       // маленький интервал вместо 0
-    speed: 30000,
+    autoWidth: false, // можно убрать perPage если нужен автоширина
+    speed: 0,
     easing: 'linear',
-    pauseOnHover: false, // отключаем стандартный pauseOnHover
+    autoScroll: {
+      speed: 1.5,
+      pauseOnHover: true,
+      pauseOnFocus: true,
+    },
     breakpoints: {
-      991: { perPage: 2 },
-      499: { perPage: 1.5 },
+      991: { perPage: 2,   gap: '5px', },
+      499: { perPage: 1 },
     },
   });
 
-  splide.mount();
+  splide.mount({ AutoScroll });
 
-  // Навешиваем hover на каждый видео слайд
-  splide.Components.Elements.slides.forEach((slide) => {
-    const videoItem = slide.querySelector('.video__item');
-    if (videoItem) {
-      videoItem.addEventListener('mouseenter', () => {
-        splide.Components.Autoplay.stop(); // используем stop(), чтобы реально остановить
-      });
-      videoItem.addEventListener('mouseleave', () => {
-        splide.Components.Autoplay.play(); // и снова запускаем
-      });
-    }
-  });
 });
+
+
+

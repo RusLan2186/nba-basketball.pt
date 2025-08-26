@@ -52,20 +52,8 @@
 
 .splide__list {
   width: 100%;
-  border: 1px solid #000;
 }
-/* 
-.video__rows {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
-  width: 80%;
-  margin: -120px auto 0 auto;
-  background: #b48b4b;
-  padding: 15px;
-  position: relative;
-  z-index: 20;
-} */
+
 
 .video__item {
   display: flex;
@@ -127,14 +115,15 @@
 
 @media (max-width: 499.98px) {
   .splide {
-    margin-top: -70px;
+    margin-top: -60px;
+    padding: 5px;
   }
 
   .video__item {
     border: 1px solid #ffffff;
   }
   .video__img_block {
-    padding-bottom: 45%;
+    padding-bottom: 40%;
   }
   .video__item .label{
     font-size: 12px;
