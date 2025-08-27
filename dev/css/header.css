@@ -121,7 +121,10 @@
     top: 0%;
     right: -100%;
     z-index: 15;
-    background-color: #b48b4b;
+    background-image: url('../images/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
     padding: 100px 30px 50px 30px;
     transition: right 0.6s;
     overflow: auto;
@@ -138,6 +141,16 @@
     z-index: 25;
     border-bottom: 1px solid #b48b4b;
   }
+  .header__nav:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.607);
+    backdrop-filter: blur(1px);
+  }
 
   .header__nav.open-menu {
     right: 0%;
@@ -146,7 +159,7 @@
   .header__nav_list {
     flex-direction: column;
     row-gap: 25px;
-    align-items: flex-start;
+    align-items: flex-end;
     align-content: end;
     flex-wrap: nowrap;
     width: 100%;
