@@ -10,7 +10,7 @@ const calendar = new FullCalendar.Calendar(calendarEl, {
         awayLogo: '/images/32b68227876100e290a86ee73c2372e7.png',
         homeShort: 'tor',
         awayShort: 'cli',
-        time: '20:00',
+        time: '120:100',
         matchUrl: '#'
       }
     },

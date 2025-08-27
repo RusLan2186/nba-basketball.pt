@@ -142,7 +142,7 @@
   text-transform: uppercase;
 }
 .time {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   min-width: 1.875rem;
   color:  #B48B4B;
@@ -186,8 +186,9 @@
     font-size: 0.75rem;
   }
   .time {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
+    word-wrap: break-word;
   }
   .match-center-btn {
     padding: 0.25rem 0.375rem; /* 4px 6px */
